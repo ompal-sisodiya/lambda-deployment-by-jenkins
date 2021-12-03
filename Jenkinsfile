@@ -35,12 +35,15 @@ pipeline {
     post {
       always {
        // execute every time when pipe line
+       echo 'always execute'
       }
       failure {
        // excute this statment when pipe line failed
+       echo 'failure case execute'
       }
       success {
         // execute this statement when pipe line was successed
+        echo 'success execute'
       }
     }
 }
