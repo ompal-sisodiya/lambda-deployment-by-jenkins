@@ -13,12 +13,12 @@ pipeline {
 
     stage('Test' ) {
       // Test cases only execute when branch name should dev
-      // when {
-      //   expression {
-      //     // BRANCH_NAME is env variable in jenkins
-      //     BRANCH_NAME == 'dev'
-      //   }
-      // }
+      when {
+        expression {
+          // BRANCH_NAME is env variable in jenkins
+          env.BRANCH_NAME == 'dev'
+        }
+      }
 
       steps {
          echo 'Testing the application'
