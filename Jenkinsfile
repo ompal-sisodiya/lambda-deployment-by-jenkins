@@ -5,7 +5,7 @@ pipeline {
       
     stage('build' ) {
       steps {
-         //sh 'npm install'
+         sh 'npm install'
          echo 'building the application'
          echo "Build Number: ${env.BUILD_NUMBER}"
         } 
@@ -27,7 +27,7 @@ pipeline {
 
       stage('Deploy' ) {
         steps {
-          echo 'Deploy the application'
+           sh 'sls deploy'
           } 
         }
     }
