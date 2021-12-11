@@ -25,7 +25,7 @@ pipeline {
       }
 
       stage('Config'){
-        staps {
+        steps {
           sh 'serverless config credentials --provider aws --key AKIAUW4BFBH3LUN6IG66 --secret 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 --profile serverlessUser'
           echo 'Serverless profile create successfully'
         }
