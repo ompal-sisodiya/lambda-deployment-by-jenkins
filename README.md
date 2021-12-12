@@ -4,3 +4,7 @@
 # => serverless config credentials --provider aws --key AKIAUW4BFBH3LUN6IG66 --secret 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 --profile serverlessUser
 # serverless template create command : serverless create --template aws-nodejs --path lambda-deployment-by-jenkins
 # Added Profile in serverless file in Provider section. 
+
+<!-- serverless config credentials --provider aws --key AKIAUW4BFBH3EO4NIEHO --secret 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 --profile serverlessUser1 -->
+
+<!-- serverless template create command : serverless create --template aws-nodejs --path lambda-deployment-by-jenkins-or-serverless -->
